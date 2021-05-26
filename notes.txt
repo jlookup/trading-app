@@ -1,0 +1,95 @@
+
+
+Full Stack Tading App with FastAPI 
+Tutorial by parttimelarry
+
+###################################  Learning Log  #######################################################
+
+Lesson                  							Blog?	Date Start      Date End
+======================================================================================
+00. Overview												2021-05-16		2021-05-16
+01. Database Design                                 y             
+02. CRUD Operations									y 
+03. Python, SQL, Stock Universes					y 		2021-05-17
+04. Scheduled Jobs									y 
+05. Price Data Feeds								y 
+06. FastAPI Web UI
+07. Charting and Filtering
+08. Opening Range Breakout
+09. A Costly Bug
+10. Email and SMS Notifications
+11. Tulip Indicators
+12. UI Bugs Fixes, Daylight Savings
+13. Shorting Breakdowns
+14. Profits, RSI/SMA Filter, Order History, Navbar
+15. Bollinger Bands, Intraday Tulip Indicators
+16. Position Sizing, Liquidation
+17. Trailing Stop Orders, ATR
+18. Historical Minute Data in SQLite
+19. Backtesting with BackTrader
+
+
+
+###################################  Notes  #######################################################
+
+00. Overview										
+
+01. Database Design                                 
+
+02. CRUD Operations									
+
+03. Python, SQL, Stock Universes					
+
+04. Scheduled Jobs									
+
+05. Price Data Feeds								
+
+06. FastAPI Web UI
+
+07. Charting and Filtering
+
+08. Opening Range Breakout
+
+09. A Costly Bug
+
+10. Email and SMS Notifications
+
+11. Tulip Indicators
+
+12. UI Bugs Fixes, Daylight Savings
+
+13. Shorting Breakdowns
+
+14. Profits, RSI/SMA Filter, Order History, Navbar
+
+15. Bollinger Bands, Intraday Tulip Indicators
+
+16. Position Sizing, Liquidation
+
+17. Trailing Stop Orders, ATR
+
+18. Historical Minute Data in SQLite
+
+19. Backtesting with BackTrader
+
+
+
+
+
+
+
+###################################  Links  #######################################################
+
+Resource                    URL
+===============================================================================================================
+Blog Lessons				https://hackingthemarkets.com/full-stack-trading-app-tutorial-part-01-database-design/
+Video Tutorial              https://www.youtube.com/watch?v=OFnOEIyqSRg&list=PLvzuUVysUFOuoRna8KhschkVVUo2E2g6G&index=1
+Tutorial Repo               https://github.com/financehacks/stockscreener
+
+FastAPI                     https://fastapi.tiangolo.com/
+Semantic UI                 https://semantic-ui.com/introduction/getting-started.html
+CORS resources              https://www.srihash.org/  ## SRI Hash generator. Generates an integrity hash for crossorigin resources to prevent loading altered code.
+                            https://www.w3schools.com/Tags/att_script_integrity.asp ## Tutorial on CORS
+                            https://fastapi.tiangolo.com/tutorial/cors/ ## The FastAPI way to handle CORS
+SQLAlchemy                  https://fastapi.tiangolo.com/tutorial/sql-databases/
+Alpaca Trade API            https://alpaca.markets/algotrading

@@ -39,7 +39,9 @@ Lesson                  							Blog?	Date Start      Date End
 02. CRUD Operations									
 
 03. Python, SQL, Stock Universes					
-
+	
+	Using python to build a stock universe.
+	
 04. Scheduled Jobs									
 
 05. Price Data Feeds								

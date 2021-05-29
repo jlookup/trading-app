@@ -1,7 +1,7 @@
 
 import os
 
-SQL_SCRIPT_DIR: str = 'queries'
+SQL_SCRIPT_DIR: str = 'sql/queries'
 
 
 def read(file_name: str, dir: str = SQL_SCRIPT_DIR) -> str:
@@ -10,6 +10,9 @@ def read(file_name: str, dir: str = SQL_SCRIPT_DIR) -> str:
     into a string variable 
     that can be executed by a db engine,
     for example, slqite3.executescript()
+
+    Currently, does not allow for parameterization.
+    Vunerable to SQL injection. do not use public-facing.
     """
     file_path = os.path.join(dir,file_name)
     

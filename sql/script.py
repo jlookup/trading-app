@@ -20,3 +20,18 @@ def read(file_name: str, dir: str = SQL_SCRIPT_DIR) -> str:
         script: str = script_file.read()
 
     return script
+
+
+def execute_file(db_connection, file_name: str, dir: str = SQL_SCRIPT_DIR) -> bool:
+    """
+    For SQLite3.
+    Executes a .sql script file
+    """
+    try:
+        script = read(file_name, dir)
+        db_connection.executescript(script)
+        result = True
+    except:
+        result = False
+    
+    return result

@@ -1,0 +1,45 @@
+Container Notes
+Trading App
+
+Startup Steps
+	run study.sh - script to open WSL port on windows
+	launch sudo dockerd
+	launch container
+
+
+
+# TODO: 
+    # I think we are repeating several commands (port, ip, no-broswer, allow-root) unnecessarily. Should troubleshoot some cleanup.
+
+
+Build:
+	From dir:
+	docker build -t tradeapp:docker .
+	Builds the image, including install.sh
+
+
+Run:
+	docker run -p 4445:4445 --mount type=bind,source=/home/jthomas/dev/tradeapp/tradeapp,target=/root/tradeapp tradeapp:docker
+	docker run -p 4445:4445 --mount type=bind,source="$(pwd)"/tradeapp, target=/root/tradeapp tradeapp:docker
+	Notes:
+		-p publish port <client port>:<container port>
+		--mount - persistent storage. Mounts a location in the host filesystem.
+
+
+To access in Windows we must forward the port
+In ps/cmd:
+    Type ipconfig and note the IP address for Ethernet adapter vEthernet (WSL)
+    To forward port 80 from localhost->WSL type:
+        netsh interface portproxy add v4tov4 listenport=4444 listenaddress=127.0.0.1 connectport=4444 connectaddress=<wsl_ip>
+
+
+Other 
+To see all images:
+    docker image ls -a
+To see containers
+    docker ps
+    docker container ls -a 
+To clean up 
+    docker { system | image | container } prune
+To enter container shell
+    docker exec -it { container_id } bash

@@ -1,0 +1,18 @@
+
+
+Modules and Paths
+
+The interpreter seeks modules to satisfy import statements by looking in a defined set of Paths
+Those paths are stored in sys.path
+At runtime, anything stored in the env variable $PYTHONPATH is added to sys.paths.
+So if you want to add a path:
+    $ export PYTHONPATH='path/to/directory'
+    $ export PYTHONPATH=path/to/directory:{$PYTHONPATH}
+
+
+
+Getting and setting env variables
+
+import os
+os.environ['DEBUSSY'] = '1'
+someVariable = int(os.environ['DEBUSSY'])

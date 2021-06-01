@@ -1,22 +1,5 @@
-from configparser import ConfigParser
+import sys
 
-#Read config.ini file
-config_object = ConfigParser()
-config_object.read("config.ini")
+print(sys.path)
 
-#Get the USERINFO section
-llama = config_object["alpaca"]
-
-print (llama['endpoint_paper'])
-
-
-
-# from configparser import ConfigParser
-
-# #Read config.ini file
-# config_object = ConfigParser()
-# config_object.read("config.ini")
-
-# #Get the password
-# userinfo = config_object["USERINFO"]
-# print("Password is {}".format(userinfo["password"]))
+print('I have another brilliant idea!'.lower().endswith(('!', '.', '?')))
